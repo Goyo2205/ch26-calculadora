@@ -5,22 +5,39 @@
 }
 .btn{
     margin: 4px;
+    padding: 4px;
+    box-shadow: 0px 2px 0px 1px #02020c7e;
 }
 
-.algo{
-    box-shadow: 0px 2px 0px 3px #02020c7e;
-}
 .calculadora{
     min-width: 200px;
-    border-radius: 20px;
-    box-shadow: 0px 2px 0px 3px #02020c7e;
-}
-.display{
+    max-width: 300px;
     border-radius: 15px;
-    box-shadow: 0px 2px 0px 3px #02020c7e;
+    box-shadow:3px 3px 0px 3px #02020c7e;
+    background-color: red;
+}
+
+.cont-general{
+    height: 100vh;
+}
+
+.display{
+    border-radius: 8px;
+    box-shadow: 0px 0px 0px 2px #02020c7e;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     overflow: hidden;
     height: 50px;
+}
+
+#valor-anterior{
+    color: gray;
+    font-size: 18px;
+}
+
+@media screen and (max-width:800px) {
+    .cont-general{
+        height: 100%;
+    }
 }
